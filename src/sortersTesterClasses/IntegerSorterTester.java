@@ -5,6 +5,8 @@ import java.util.Comparator;
 import java.util.Random;
 
 import sorterClasses.BubbleSortSorter;
+import sorterClasses.CocktailSortSorter;
+import sorterClasses.CombSortSorter;
 import sorterClasses.InsertionSortSorter;
 import sorterClasses.SelectionSortSorter;
 import interfaces.Sorter;
@@ -13,12 +15,14 @@ public class IntegerSorterTester {
 	//private static Sorter<Integer> sorter; 
 	private static Random rnd; 
 	private static ArrayList<Sorter<Integer>> sortersList = new ArrayList<>(); 
-	private static ArrayList<Sorter<Entero>> sortersList1 = new ArrayList<>();
+	//private static ArrayList<Sorter<Entero>> sortersList1 = new ArrayList<>();
 	
 	public static void main(String[] args) { 
 		sortersList.add(new BubbleSortSorter<Integer>()); 
 		sortersList.add(new SelectionSortSorter<Integer>()); 
 		sortersList.add(new InsertionSortSorter<Integer>()); 
+		sortersList.add(new CombSortSorter<Integer>());
+		sortersList.add(new CocktailSortSorter<Integer>());
 		//sortersList.add(new SelectionSortSorter<Integer>());
 		
 		test("Sorting Using Default Comparator<Integer>", null); 
