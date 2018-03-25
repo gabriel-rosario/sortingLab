@@ -7,6 +7,7 @@ import java.util.Random;
 import sorterClasses.BubbleSortSorter;
 import sorterClasses.CocktailSortSorter;
 import sorterClasses.CombSortSorter;
+import sorterClasses.HeapSortSorter;
 import sorterClasses.InsertionSortSorter;
 import sorterClasses.SelectionSortSorter;
 import interfaces.Sorter;
@@ -23,6 +24,7 @@ public class IntegerSorterTester {
 		sortersList.add(new InsertionSortSorter<Integer>()); 
 		sortersList.add(new CombSortSorter<Integer>());
 		sortersList.add(new CocktailSortSorter<Integer>());
+		sortersList.add(new HeapSortSorter<Integer>());
 		//sortersList.add(new SelectionSortSorter<Integer>());
 		
 		test("Sorting Using Default Comparator<Integer>", null); 
